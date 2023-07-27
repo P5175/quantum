@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+   
+
+
+}
+
+.outer-body {
+    background-color: rgb(221, 218, 218);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-form {
+    width: 650px;
+
+
+}
+
+.form {
+  
+    padding: 20px;
+    background-color: white;
+}
+
+.form-title {
+    display: flex;
+}
+
+.arrow {
+    width: 50px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.title-name {
+    font-size: 25px;
+    width: 80%;
+    text-align: center;
+}
+
+.row1 {
+    display: flex;
+   
+    width: 70%;
+}
+
+.container {
+    display: flex;
+    cursor: pointer;
+
+    width: 100%;
+}
+
+.radio-btn {
+    position: relative;
+
+}
+
+.radio-btn input {
+    /* position: absolute; */
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+.checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid green;
+
+}
+
+.container .checkmark:after {
+    top: 3px;
+    left: 2px;
+    width: 8px;
+    height: 7px;
+    border-radius: 50%;
+    background: green;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio-text {
+   font-size: 20px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.row2,
+.row3 {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.state,
+.district {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.row4,
+.row5 {
+    display: flex;
+    flex-direction: column;
+}
+
+.row4 input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.row4 a {
+    text-decoration: none;
+    color: green;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.row5 div {
+    position: relative;
+}
+
+.row5 div input {
+
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.row5 div span {
+    position: absolute;
+    right: 5px;
+}
+
+.row5 a {
+    text-decoration: none;
+    color: green;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.row6 label {
+    display: flex;
+}
+
+.row7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row7 button {
+    width: 200px;
+    background-color: rgb(58, 219, 58);
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+}
+
+.form-title,.row1,.row2,.row3,.row4,.row5,.row6,.row7{
+    margin: 50px;
+}
+label{
+    font-size:20px
+}
+
+::placeholder{
+    font-size: 15px;
+}
+select {
+    font-size: 20px;
+    color: rgb(108, 115, 121);
+}
+input{
+    font-size: 20px;
+}
+button{
+    font-size: 25px;
+}
